@@ -1,6 +1,4 @@
 # About Me
-I am current junior at Cornell University majoring in Electrical and Computer Engineering and pursuing minors in Computer Science and Game Design.  
-
 My **coursework** features: Computer Systems Programming, Intelligent Physical Systems, Object-Oriented Programming and Data Structures, Digital Logic and Computer Organization, Embedded Systems (S'19), and Introduction to Microelectronics (S'19).  
 
 Some **skills** of mine are: C, C++, Java, Python, Arduino, UNIX, Verilog, Assembly, Microcontrollers, MATLAB,  and Git.  
