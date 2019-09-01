@@ -7,7 +7,9 @@ My **extracurriculars** include: Cornell Theme Park Entertainment Group (Member)
 
 Examples of my programming can be found on my [GitHub](https://github.com/jr826/).
 ## Experience
-This past summer, I worked under Cornell Professor David Winkler as a member of the [TABER](http://eeb.cornell.edu/winkler/wordpress/?page_id=335) group. Our group used the TI CC1310F128 microcontroller to design a prototype bird tag that would collect and store light data before transmitting it to a basestation. I programmed the microcontroller's data storage and retrevial system in C.
+This past summer, I interned for Peraton in Rome, NY. During my time there, I collaborated with professional engineers on contracted projects. I spent time analyzing and writing code in VHDL and implementing a component of a larger system.
+
+During the summer of 2018, I worked under Cornell Professor David Winkler as a member of the [TABER](http://eeb.cornell.edu/winkler/wordpress/?page_id=335) group. Our group used the TI CC1310F128 microcontroller to design a prototype bird tag that would collect and store light data before transmitting it to a basestation. I programmed the microcontroller's data storage and retrevial system in C.
 ### Projects
 **Maze Mapping Robot:** [This robot](https://mb2372.github.io/ece3400-team1) was a class project that I worked on with three other undergraduates. The robot was capable of following lines, detecting walls, avoiding other robots, mapping a maze, and transmitting the maze data to a nearby basestation. The robot was controlled by an Arduino and the base station was an Arduino as well. An Altera DE0-NANO FGPA was also used to detect shapes and colors of 'treasures' scattered throughout the maze. Verilog was used for the FPGA coding.  
 
