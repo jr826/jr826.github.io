@@ -15,11 +15,11 @@ The next important test was serial communication with the Artemis Nano. This was
 ## Analog Read
 Next, I tested the '<Example4_analogRead>' code, also provided by Sparkfun. This code returns the temperature of the board. By holding the board and breathing hot air onto it, I could observe the temperature value change in the Serial Monitor. This image shows the base temperature of the board:
 
-<img src="../images/base_temp.png" width="384" height="288" alt="hi" class="inline"/>
+<img src="../images/base_temp.png" width="768" height="576" alt="hi" class="inline"/>
 
 And this is the temperature after holding the board for a minute or so:
 
-<img src="../images/warm_temp.png" width="384" height="288" alt="hi" class="inline"/>
+<img src="../images/warm_temp.png" width="768" height="576" alt="hi" class="inline"/>
 
 This confirmed that I could succesfully read analog data from the board.
 
