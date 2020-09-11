@@ -8,7 +8,7 @@ The first example I ran was the Blink example provided by Arduino. This code tog
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tHG4yXJTqCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Serial Communication
-The next important test was serial communication with the Artemis Nano. This was done using the 'Example2_Serial' code provided by Sparkfun. After uploading this code to the board, I was able to open the Serial Monitor and communicate with the board successfully, as shown below. 
+The next important test was serial communication with the Artemis Nano. This was done using the Example2_Serial code provided by Sparkfun. After uploading this code to the board, I was able to open the Serial Monitor and communicate with the board successfully, as shown below. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p75CnPiYeoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -31,17 +31,17 @@ Next up was the Example1_MicrophoneOutput example. Using the Serial Monitor, thi
 ## Whistle Control
 Lastly, I combined the Blink and Example1_MicrophoneOutput examples to control the blue LED with my whistling. In addition, a seperate battery was used (the yellow LED indicates the battery is charging) so that the board can be used without needing connection to a computer at all times. Starting with the microphone code, I added to the setup loop:
 
-'''
+```
 pinMode(LED_BUILTIN, OUTPUT);
-'''
+```
 
 To initialize the LED. The '<LED_BUILTIN>' macro is recognized by Arduino for the Artemis Nano. To change the LED, I went to the section of the code where the freuqency is found and added the following conditions:
 
-'''
+```
 'Serial.printf("Loudest frequency: %d         \n", ui32LoudestFrequency);
   if ( ui32LoudestFrequency < 1300 && ui32LoudestFrequency > 1000 ) digitalWrite(LED_BUILTIN, HIGH);
   else digitalWrite(LED_BUILTIN, LOW);'
-'''
+```
 
 This code lights the LED for frequencies between 1000Hz and 1300Hz. This range was chosen since my whistle was around 1100Hz. After uploading this code, I observed it working both when the board was connected to the computer, and when it was just connected to the battery.
 
