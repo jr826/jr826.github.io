@@ -1,4 +1,4 @@
-#Lab 1: Setup
+# Lab 1: Setup
 The goal of this lab was to gain familiarity with the Artemis board as well as set up our VM for the class. This write up will focus on the artemis board.
 ## First Steps
 In order to begin programming the board, I needed to install the Arduino development environment and add in the Sparkfun Apollo3 board support pack. With integrated, I was ready to connect the Artemis Nano and run some code.
