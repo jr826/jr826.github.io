@@ -4,5 +4,5 @@ My name is Jason Russo, a current M.Eng student in ECE at Cornell University. Th
 <img src="./images/cooler pro pic.jpg" width="384" height="288" alt="hi" class="inline"/>
 
 ## Labs:
-[Lab 1](./labs/lab1.md)
+[Lab 1](./labs/lab1.md) <br/>
 [Lab 2](./labs/lab2.md)
