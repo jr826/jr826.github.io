@@ -52,9 +52,8 @@ The car can reliably turn in place in "speedy" mode by putting the sticks in opp
 For turns in place in "slowly" mode, there was a bit of slippage at the start before the car would spin in place.
 
 ### Stopping
-I ran two types of stopping tests:
-- stopping from friction.
-- stopping with controls.
+I ran two types of stopping tests: stopping from friction and stopping with controls. 
+<br/>
 To stop with friction, I simply ran the robot to near max speed then took my hands off the controls and let it run till stoppage. For stopping with controls, I would run the robot to near max speed, then quickly reverse the stick directions. Here is what I found:
 <br/>
 To stop with friction in "slowly" mode, the car took about 2.5 feet on a slick wood surface. 
@@ -64,7 +63,8 @@ To stop with friction in "speedy" mode, the car took about 5' on the same surfac
 <br/> 
 Stopping with the controls was very reliable in "slowly" mode. The car could nearly stop on a dime.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hWZxV2PM-ks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- Stopping with controls in "speedy" mode is very difficult. At max speed, simply reversing the sticks will always cause the car to flip. This goes for forward or reverse breaking.
+<br/>
+Stopping with controls in "speedy" mode is very difficult. At max speed, simply reversing the sticks will always cause the car to flip. This goes for forward or reverse breaking.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mYe7wY5SJdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The Simulator
