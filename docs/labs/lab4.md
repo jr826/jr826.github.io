@@ -3,12 +3,12 @@ In this lab, I dissesembled the robot and removed the preexisting control PCB. T
 ## Serial Controlled Motor Driver (SCMD)
 The motor driver was connected to the Artemis board using a Qwiic connector. After downloading the SCMD library through Arduino, I was able to run the `Example1_wire` code. Using this code, I determined the SCMD address to be 0x5D, which matches the datasheet.
 
-<img src="../images/scmd_address.png" width="768" height="352" alt="hi" class="inline"/>
+<img src="../images/scmd_address.png" width="960" height="440" alt="hi" class="inline"/>
 
 ## RC Car Modifications
 The next step was to dissesemble the RC car in order to add the SCMD and Artemis board. I began by removing the top in order to expose the PCB and motors. After removing the PCB and cutting the motor wires, I spent a considerable amount of time stripping and inserting the wires into the SCMD. My wires were rather short, making it hard to fit the SCMD into the preexisting gap for the old PCB. As such, I had to simply rest it on top and tape it down.
 
-<img src="../images/scmd_robot.jpg" width="576" height="768" alt="hi" class="inline"/>
+<img src="../images/scmd_robot.jpg" width="432" height="576" alt="hi" class="inline"/>
 
 With the SCMD and battery on, the Artemis board could then rest on top of the tape.
 
