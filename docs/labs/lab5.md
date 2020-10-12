@@ -32,7 +32,7 @@ The table below shows the distance of the tape from the wall and the sensor read
 
 I then tested the accuracy of measurements. By rapidly moving my hand back and forth over the sensor, I got perioidic errors in measurement, as shown below:
 
-<img src="../images/tof_rapid.png" width="432" height="576" alt="hi" class="inline"/>
+<img src="../images/tof_rapid.png" width="960" height="440" alt="hi" class="inline"/>
 
 This quick of changes is probably faster than anything the robot would reasonably encounter. Even still, the sensor was able to detect some of the passes of my hand. This reassured me that the robot would be able to detect walls reliably, even at higher speeds. 
 ## Obstacle Avoidance
