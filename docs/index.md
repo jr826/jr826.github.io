@@ -9,3 +9,4 @@ My name is Jason Russo, a current M.Eng student in ECE at Cornell University. Th
 [Lab 3](./labs/lab3.md) <br/>
 [Lab 4](./labs/lab4.md) <br/>
 [Lab 5](./labs/lab5.md) <br/>
+[Lab 6](./labs/lab6.md) <br/>

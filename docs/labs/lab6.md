@@ -39,11 +39,11 @@ Against wall + rotated counter-clockwise (roll = -90):
 <br/>
 From this data, I found that the roll or pitch that I was measuring would be within a 2-3 degrees of the expected value. The other value, however, fluctuated quite a bit.
 <br/>
-Next, I looked at noise from the accelerometer. I struggled to get a clear dataset that defined a clear cutoff frequency for me. Because of this, I picked a starting cutoff frequency of 250 Hz. This value seemed plausible based on the data I was able to get. With alpha = (T/T+RC), I found alpha = 0.12. From this value, I toyed around with different delays and frequencies. I settled on alpha = 30 as it seemed to get rid of the most noise without introducing too much lag to measurements. These images show the acceleration roll and pitch with (left) and without (right) the Low Pass Filter:
+Next, I looked at noise from the accelerometer. I struggled to get a clear dataset that defined a clear cutoff frequency for me. Because of this, I picked a starting cutoff frequency of 250 Hz. This value seemed plausible based on the data I was able to get. With alpha = (T/T+RC), I found alpha = 0.12. From this value, I toyed around with different delays and frequencies. I settled on alpha = 30 as it seemed to get rid of the most noise without introducing too much lag to measurements. These images show the acceleration roll and pitch before (left) and after (right) the Low Pass Filter:
 
 <p float="left">
-  <img src="../images/accel_filter.png"    width="400" />
-  <img src="../images/accel_no_filter.png" width="400" /> 
+  <img src="../images/accel_no_filter.png" width="400" />
+  <img src="../images/accel_filter.png"    width="400" /> 
 </p>
 
 The filtered image (right) is a lot smoother than the left image. Even still, some noise remains. 
@@ -87,7 +87,10 @@ xm = myICM.magX() * cos(pitch) - myICM.magY() * sin(roll) * sin(pitch) + myICM.m
 ym = myICM.magY() * cos(roll)  + myICM.magZ() * sin(roll);
 yaw = atan2(ym, xm);
 ```
-The results of the magnetometer, however, were extremely noisy. I ended up just using the gyroscope for my yaw measurements.
+The results of the magnetometer, however, were extremely noisy. I ended up just using the gyroscope for my yaw measurements. The following image shows the yaw data from the gyroscope when rotating the robot around. It was fairly resistant to changes in pitch as well.
+
+<img src="../images/robot_yaw.png" width="568" alt="hi" class="inline"/>
+
 ## PID Control
 Next, PID control was implmented to have the robot spin in place at a slow and constant rate. I began by having the robot spin in circles as the motor speeds increased and then decreased. This gave me a better sense of how slow I could get the robot to spin with simply open loop control.
 <br/>
